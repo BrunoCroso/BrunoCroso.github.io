@@ -34,7 +34,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #bd5d38;
+  --bs-primary: ##00008B;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -8037,7 +8037,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgb(135, 206, 250) !important;
 }
 
 .text-secondary {
@@ -8128,8 +8128,10 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
+  --bs-primary-rgb: 50, 70, 255; /* Azul */
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
+
 
 .bg-secondary {
   --bs-bg-opacity: 1;
