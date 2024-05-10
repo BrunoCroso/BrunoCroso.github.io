@@ -41,26 +41,36 @@
         <div class="container-fluid p-0">
 
 
-            <!-- Home-->
-            <section class="resume-section" id="home">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Bruno Croso
-                    </h1>
-                    <div class="subheading mb-5">
-                        São Paulo, Brazil ·
-                        <a href="mailto:name@email.com" style="color: rgb(55, 64, 120);">croso.bruno@gmail.com</a>
-                    </div>
-                    <p class="lead mb-5">A statistics student at the University of São Paulo passionate about Data Science.<br>
-                        This website is designed to provide a clearer and more aesthetically pleasing view of my personal and professional journey.
-                    </p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/bruno-croso-cunha-da-silva-78a154236/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/BrunoCroso" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
+        <!-- Home-->
+        <section class="resume-section" id="home">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Bruno Croso
+                </h1>
+                <div class="subheading mb-5">
+                    São Paulo, Brazil ·
+                    <a href="mailto:name@email.com" style="color: rgb(55, 64, 120);">croso.bruno@gmail.com</a>
                 </div>
-            </section>
-            <hr class="m-0" />
+                <p class="lead mb-5">A statistics student at the University of São Paulo passionate about Data Science.<br>
+                    This website is designed to provide a clearer and more aesthetically pleasing view of my personal and professional journey.
+                </p>
+                <!-- Last updated information -->
+                <p class="last-updated">
+                    Last updated on: <span id="lastUpdatedDate"></span>
+                </p>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.linkedin.com/in/bruno-croso-cunha-da-silva-78a154236/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://github.com/BrunoCroso" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Script to display last updated date -->
+        <script>
+            document.getElementById('lastUpdatedDate').textContent = document.lastModified.split(" ")[0];
+        </script>
+
 
             <!-- About me-->
             <section class="resume-section" id="about">
@@ -78,6 +88,17 @@
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Professional Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Data Science Intern</h3>
+                            <div class="subheading mb-3">Farmtech</div>
+                            <p align="justify">
+                                As a Data Science Intern at Farmtech, the leading digital rural credit company in Brazil, I primarily worked with SQL, Excel, and Power BI to develop comprehensive reports and studies to support commercial decision-making within the company.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Nov 2023 - Present</span></div>
+                    </div>
+                    
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Data Team Lead</h3>
@@ -122,8 +143,7 @@
                             <h3 class="mb-0">Vice President</h3>
                             <div class="subheading mb-3">aMostra Estatística IME USP</div>
                             <p align="justify">
-                                Having initially served as the President of the Organizing Committee for the University of São Paulo Statistics Week, I am humbled to continue contributing to this event, now as the Vice-President. In my current capacity, my role has evolved to focus on providing support, guidance, and strategic insights to the team. Collaborating closely with the committee, I leverage my past experiences to assist in decision-making and offer advice to enhance the event's impact and reach.
-                            </p>
+                                Having initially served as the President of the Organizing Committee for the University of São Paulo Statistics Week, I was humbled to continue contributing to this event as the Vice-President. In that role, my responsibilities evolved to focus on providing support, guidance, and strategic insights to the team. Collaborating closely with the committee, I leveraged my past experiences to assist in decision-making and offered advice to enhance the event's impact and reach.                            </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Mar 2023 - Present</span></div>
                     </div>
@@ -217,12 +237,16 @@
                         <li class="list-inline-item"><i class="fas fa-file-excel"></i></li>
                         <li class="list-inline-item"><i class="fas fa-file-word"></i></li>
                         <li class="list-inline-item"><i class="fas fa-file-powerpoint"></i></li>
-                    </ul>
+                        <li class="list-inline-item">
+                            <a href="https://powerbi.microsoft.com/" target="_blank" rel="noreferrer">
+                                <img src="assets/img/power-bi-icon-logo.png" alt="Power BI" width="30" height="30" />
+                            </a>
+                        </li>                    </ul>
                     <div class="subheading mb-3">Languages</div>
                     <ul class="list-inline dev-icons fs-5">
                         <p>
                             Native Portuguese <br>
-                            Advanced English (FCE Cambridge B2 Certification - Score 177)<br>
+                            Advanced English (FCE Cambridge B2 Certification - Score 177) (TOEFL iBT - Score 105/120, 2024)<br>
                             Intermediate Spanish (DELE certification level B2)
                         </p>               
                     </ul>
@@ -282,6 +306,9 @@
                         </li>
                         <li>
                             📚 MySQL - 40 horas, Curso em Vídeo
+                        </li>
+                        <li>
+                            📚 Curso SQL Completo 2020 + Desafios + Muita Prática, Udemy
                         </li>
                     </ul>
 
